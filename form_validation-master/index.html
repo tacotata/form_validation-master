@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form Validation</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script defer src="js/form.js"></script>
+	<script>
+		//여기에 들어갈 값을 생각해보자 !!! 
+		$(document).ready(()=>{
+			new MyForm
+		})
+	</script>
+</head>
+<body>
+	<section>
+		<form action="result.html" method="get" id="myForm">
+			<fieldset>
+				<legend>MEMBERSHIP</legend>
+
+				<!-- 아이디 인증 -->
+				<article class="userid">
+					<label for="userid">User ID</label>
+					<input type="text" name="userid" id="userid" placeholder="아이디를 입력하세요">
+				</article>
+
+				<!-- 비밀번호 인증 -->
+				<article class="pwd">
+					<label for="pwd1">Password</label>
+					<input type="password" name="pwd1" id="pwd1" placeholder="비밀번호를 입력하세요">
+
+					<label for="pwd2">Password2</label>
+					<input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력하세요">
+				</article>
+
+				<!-- 이메일 인증 -->
+				<article class="email">
+					<label for="email">E-mail</label>
+					<input type="text" name="email" id="email" placeholder="'이메일을 입력하세요">
+				</article>
+
+				<!-- 최종학력 -->
+				<article class="edu">
+					<label for="edu">Education</label>
+					<select name="edu" id="edu">
+						<option value="">최종학력을 선택하세요.</option>
+						<option value="elementary-school">초등학교 졸업</option>
+						<option value="middle-school">중학교 졸업</option>
+						<option value="high-school">고등학교 졸업</option>
+						<option value="college">대학교 졸업</option>
+					</select>
+				</article>
+
+				<!-- 성별 -->
+				<article class="gender">
+					<h2>Gender</h2>
+					<label for="male">Male</label>
+					<input type="radio" value="male" name="gender" id="male">
+
+					<label for="female">Female</label>
+					<input type="radio" value="female" name="gender" id="female">
+				</article>
+
+				<!-- 관심사 -->
+				<article class="interests">
+					<h2>Interests</h2>
+					<label for="sports">Sports</label>
+					<input type="checkbox" name="hobby" id="sports" value="sports">
+
+					<label for="music">Music</label>
+					<input type="checkbox" name="hobby" id="music" value="music">
+
+					<label for="game">Game</label>
+					<input type="checkbox" name="hobby" id="game" value="game">
+				</article>
+
+				<!-- 남기는말 -->
+				<article class="comments">
+					<label for="comments">Comments</label>
+					<textarea name="comments" id="comments" cols="30" rows="10" placeholder="남기는 말을 입력하세요"></textarea>
+				</article>
+
+				<!-- 버튼셋 -->
+				<article class="btns">
+					<input type="reset" vale="CANCEL">
+					<input type="submit" vale="SEND">
+				</article>
+			</fieldset>
+		</form>
+	</section>
+</body>
+</html>

@@ -1,0 +1,92 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: #efefef;
+}
+
+ul, ol, li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+fieldset {
+  border: none;
+}
+
+section {
+  width: 600px;
+  margin: 50px auto;
+  padding: 70px 50px 60px;
+  background: #fff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+}
+section legend {
+  font: normal 45px/1 "arial";
+  color: #555;
+  margin-bottom: 50px;
+}
+section article {
+  padding: 15px 0px;
+}
+section article > p {
+  font: 11px/1 "맑은 고딕", "돋움";
+  color: hotpink;
+}
+section article label {
+  color: #999;
+  display: block;
+  margin-bottom: 10px;
+  font: bold 16px/1 "arial";
+}
+section article input[type=text], section article input[type=password], section article select, section article textarea {
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background: #f2ffff;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: skyblue;
+  resize: none;
+  transition: 1s;
+}
+section article input[type=text]::-webkit-input-placeholder, section article input[type=password]::-webkit-input-placeholder, section article select::-webkit-input-placeholder, section article textarea::-webkit-input-placeholder {
+  color: skyblue;
+}
+section article select option {
+  color: skyblue;
+}
+section article textarea {
+  font-size: 12px;
+}
+section article input[type=reset], section article input[type=submit] {
+  width: 100%;
+  border: none;
+  margin-bottom: 10px;
+  padding: 15px;
+  font: bold 12px/1 "arial";
+  color: #fff;
+  background: #666;
+  cursor: pointer;
+  transition: 0.5s;
+}
+section article.gender h2, section article.interests h2 {
+  font: bold 16px/1 "arial";
+  color: #999;
+  margin-bottom: 10px;
+}
+section article.gender label, section article.interests label {
+  display: inline-block;
+  font: normal 12px/1 "arial";
+  color: #999;
+}
+section article.gender input, section article.interests input {
+  margin-right: 30px;
+}
